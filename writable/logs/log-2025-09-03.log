@@ -1,0 +1,86 @@
+ERROR - 2025-09-03 13:57:26 --> mysqli_sql_exception: Column 'numero_prestamo' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Prestamos.php(52): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Prestamos->agregarPrestamo()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-09-03 13:57:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'numero_prestamo' cannot be null
+[Method: POST, Route: agregarPrestamo]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (:numero_prestamo:, :codigo_libro:, :carne_alumno:, :fecha_prestamo:, :fecha_devolucion:, :codigo_empleado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Prestamos.php(52): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->agregarPrestamo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 13:57:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'numero_prestamo' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (NULL, \'100009\', \'2013002\', \'2025-09-13\', \'2025-09-26\', \'1001\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (NULL, \'100009\', \'2013002\', \'2025-09-13\', \'2025-09-26\', \'1001\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (:numero_prestamo:, :codigo_libro:, :carne_alumno:, :fecha_prestamo:, :fecha_devolucion:, :codigo_empleado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Prestamos.php(52): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->agregarPrestamo()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 13:57:26 --> [Caused by] mysqli_sql_exception: Column 'numero_prestamo' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (NULL, \'100009\', \'2013002\', \'2025-09-13\', \'2025-09-26\', \'1001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (NULL, \'100009\', \'2013002\', \'2025-09-13\', \'2025-09-26\', \'1001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (NULL, \'100009\', \'2013002\', \'2025-09-13\', \'2025-09-26\', \'1001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prestamos` (`numero_prestamo`, `codigo_libro`, `carne_alumno`, `fecha_prestamo`, `fecha_devolucion`, `codigo_empleado`) VALUES (:numero_prestamo:, :codigo_libro:, :carne_alumno:, :fecha_prestamo:, :fecha_devolucion:, :codigo_empleado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Prestamos.php(52): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->agregarPrestamo()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 14:18:22 --> ParseError: Unclosed '[' on line 50
+[Method: GET, Route: Libros]
+in APPPATH\Controllers\Libros.php on line 55.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Controllers\\Libros.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Libros')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Libros')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Libros', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 17:53:35 --> ParseError: syntax error, unexpected end of file, expecting "{"
+[Method: GET, Route: Estados]
+in APPPATH\Controllers\Estados.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Controllers\\Estados.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Estados')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Estados')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Estados', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

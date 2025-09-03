@@ -1,0 +1,121 @@
+CRITICAL - 2025-09-01 13:42:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: editarAutor]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Autores.php(34): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Autores->editarAutor()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autores))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 14:08:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_prestamos.php"
+[Method: GET, Route: Prestamos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_prestamos.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_prestamos', [], true)
+ 3 APPPATH\Controllers\Prestamos.php(10): view('vista_prestamos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 14:16:30 --> ErrorException: Undefined array key "codigo_prestamo"
+[Method: GET, Route: Prestamos]
+in APPPATH\Views\vista_prestamos.php on line 83.
+ 1 APPPATH\Views\vista_prestamos.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo_prestamo"', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php', 83)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_prestamos', [], true)
+ 5 APPPATH\Controllers\Prestamos.php(10): view('vista_prestamos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 14:26:21 --> ErrorException: Undefined array key "numero_prestamo"
+[Method: GET, Route: Prestamos]
+in APPPATH\Views\vista_prestamos.php on line 83.
+ 1 APPPATH\Views\vista_prestamos.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numero_prestamo"', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php', 83)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_prestamos', [], true)
+ 5 APPPATH\Controllers\Prestamos.php(10): view('vista_prestamos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 14:27:35 --> ErrorException: Undefined array key "numero_prestamo"
+[Method: GET, Route: Prestamos]
+in APPPATH\Views\vista_prestamos.php on line 83.
+ 1 APPPATH\Views\vista_prestamos.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numero_prestamo"', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php', 83)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_prestamos', [], true)
+ 5 APPPATH\Controllers\Prestamos.php(10): view('vista_prestamos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 14:29:51 --> ErrorException: Undefined array key "numero_prestamo"
+[Method: GET, Route: Prestamos]
+in APPPATH\Views\vista_prestamos.php on line 83.
+ 1 APPPATH\Views\vista_prestamos.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numero_prestamo"', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php', 83)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_prestamos', [], true)
+ 5 APPPATH\Controllers\Prestamos.php(10): view('vista_prestamos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 14:29:55 --> ErrorException: Undefined array key "numero_prestamo"
+[Method: GET, Route: Prestamos]
+in APPPATH\Views\vista_prestamos.php on line 83.
+ 1 APPPATH\Views\vista_prestamos.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numero_prestamo"', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php', 83)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_prestamos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_prestamos', [], true)
+ 5 APPPATH\Controllers\Prestamos.php(10): view('vista_prestamos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 15:10:13 --> Error: Class "App\Controllers\PrestamosModel" not found
+[Method: GET, Route: Prestamos]
+in APPPATH\Controllers\Prestamos.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 15:29:03 --> Error: Class "App\Controllers\PrestamosModel" not found
+[Method: GET, Route: Prestamos]
+in APPPATH\Controllers\Prestamos.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-01 16:53:28 --> Error: Class "App\Controllers\PrestamosModel" not found
+[Method: GET, Route: Prestamos]
+in APPPATH\Controllers\Prestamos.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Prestamos->Prestamos()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestamos))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
